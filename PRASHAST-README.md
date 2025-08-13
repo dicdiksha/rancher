@@ -71,8 +71,7 @@ kubectl get svc -n cattle-system
 kubectl get svc -n cattle-system rancher -o wide
 ```
 
-
-- (Optional)Here’s the command for OKE internal LB
+- Here’s the command for OKE internal LB
 
 ```
 kubectl patch svc rancher -n cattle-system \
@@ -91,18 +90,3 @@ kubectl patch svc rancher -n cattle-system \
     }
   }'
 ```
-
-
-
-```
-helm install rancher rancher-stable/rancher \
-  --namespace cattle-system \
-  --set hostname=rancher.local \
-  --set bootstrapPassword=admin \
-  --set service.type=LoadBalancer \
-  --set service.annotations."service\.beta\.kubernetes\.io/oci-load-balancer-internal"="true" \
-  --set service.annotations."service\.beta\.kubernetes\.io/oci-load-balancer-shape"="flexible" \
-  --set service.annotations."service\.beta\.kubernetes\.io/oci-load-balancer-shape-flex-min"="10" \
-  --set service.annotations."service\.beta\.kubernetes\.io/oci-load-balancer-shape-flex-max"="100" \
-  --set service.annotations."service\.beta\.kubernetes\.io/oci-load-balancer-subnet1"="ocid1.subnet.oc1.ap-mumbai-1.aaaaaaaa5mw6a23gadaoysagedik4n2rheeojcr3ptzqn7kuq3bqtln5dkta"
-  ```
