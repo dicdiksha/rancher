@@ -48,6 +48,7 @@ helm install rancher rancher-stable/rancher \
   --set service.type=ClusterIP \
   --set rancherImage=docker.io/rancher/rancher \
   --set rancherImageTag=v2.14.1 \
+--set systemDefaultRegistry=docker.io
 ```
 ### Parameters explained:
 
