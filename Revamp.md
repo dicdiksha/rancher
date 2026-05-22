@@ -1,6 +1,6 @@
 # Install rancher on OKE cluster 
 
-- DEV URL: https:/10.157.2.5/
+- DEV URL: https://10.157.2.179
 - PROD URL: https://
 
 - username: developer
