@@ -5,7 +5,7 @@ Rancher is an open source container management platform built for organizations 
 
 Rqancher is now running on 
 
-- ✅ DEV - https://dev-rancher.oci.diksha.gov.in
+- ✅ DEV - **https://10.50.18.57/dashboard/auth/login**
 - ✅ PROD - https://10.90.12.71:8443/dashboard/home
 
 
